@@ -8,7 +8,7 @@ $(document).ready(function() {
         resolution: 'standard_resolution',
         accessToken: '5728575989.1677ed0.932c985ab0bf4611ac2cae8683f2519d',
         sortBy: 'most-recent',
-        template: '<div class="row"> <div class="col-md-7"> <img class="instaimg" src="{{image}}" alt ="{{caption}}"></img> </div> <div class="col-md-12"> <h3>Listing</h3> <p>{{caption}}</p></div> </div> <hr>',
+        template: '<div class="row"> <div class="col-md-7"> <img class="instaimg" src="{{image}}" alt ="{{caption}}"></img> </div> <div class="col-md-12"> <h3>Listing</h3> <p>{{caption}}</p> <a class="btn btn-primary" href="#">Email about this hosue!</a></div> </div> <hr>',
         after: function(){
             
         }
