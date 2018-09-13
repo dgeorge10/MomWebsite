@@ -8,16 +8,13 @@ $(document).ready(function() {
         resolution: 'standard_resolution',
         accessToken: '5728575989.1677ed0.932c985ab0bf4611ac2cae8683f2519d',
         sortBy: 'most-recent',
-        template: '<div class="row"> <div class="col-md-7"> <img class="instaimg" src="{{image}}" alt ="{{caption}}"></img> </div> <div class="col-md-12"> <h3>Listing</h3> <p>{{caption}}</p> <a class="btn btn-primary" href="#">Email about this hosue!</a></div> </div> <hr>',
-        after: function(){
-            
-        }
+        template: '<div class="row gallery" align="center"><div class="col-xs-8"><img id="instaimg" src="{{image}}" alt ="{{caption}}"></img></div> <div class="col-xs-4" id="captions" align="center"> <h3>Listing</h3> <p>{{caption}}</p> <a class="btn btn-primary" href="#">Email about this hosue!</a></div> </div> <hr>'
      
     });
 
     userFeed.run();
 
-    //  // This will create a single gallery from all elements that have class "gallery"
+     // This will create a single gallery from all elements that have class "gallery"
     // $('.gallery').magnificPopup({
     //     type: 'image',
     //     delegate: 'a',
